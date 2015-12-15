@@ -91,7 +91,8 @@
   colorlinks=false,
   allbordercolors=white
 }
-
+% Needed to deal with bibliography
+\RequirePackage{multibib}
 
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
