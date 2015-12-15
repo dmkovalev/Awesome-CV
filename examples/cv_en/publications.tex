@@ -1,0 +1,27 @@
+\cvsection{Publications}
+\renewcommand{\section}[2]{}%
+
+\makeatletter
+\renewcommand\@biblabel[1]{}
+\renewenvironment{thebibliography}[1]
+     {\section*{\refname}%
+      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+      \list{}%
+           {\leftmargin0pt
+            \@openbib@code
+            \usecounter{enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
+
+
+\nocite{*} %lists everything in the .bib file
+\bibliographystyle{chicago} %hundreds of styles to choose from
+\bodyfont
+\bibliography{hypotheses} %name of your .bib file
