@@ -65,7 +65,7 @@
 \github{dmkovalev}
 \linkedin{dmykovalev}
 %%% Optionals
-\position{Researcher{\enskip\cdotp\enskip}Teaching Assistant}
+\position{Research Scientist{\enskip\cdotp\enskip}Teaching Assistant}
 %\quote{``Make the change that you want to see in the world."}
 
 
@@ -86,40 +86,7 @@
 \import{\sectiondir}{education.tex}
 \import{\sectiondir}{experience.tex}
 \import{\sectiondir}{publications.tex}
-
-
-
-\renewcommand{\section}[2]{}%
-
-\makeatletter
-\renewcommand\@biblabel[1]{}
-\renewenvironment{thebibliography}[1]
-     {\section*{\refname}%
-      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
-      \list{}%
-           {\leftmargin0pt
-            \@openbib@code
-            \usecounter{enumiv}}%
-      \sloppy
-      \clubpenalty4000
-      \@clubpenalty \clubpenalty
-      \widowpenalty4000%
-      \sfcode`\.\@m}
-     {\def\@noitemerr
-       {\@latex@warning{Empty `thebibliography' environment}}%
-      \endlist}
-\makeatother
-
-\nocite{*} %lists everything in the .bib file
-\bibliographystyle{plainyr-rev} %hundreds of styles to choose from
-\fontsize{9pt}{1em}\bodyfontlight
-\bibliography{mybib} %name of your .bib file
-
-
-\import{\sectiondir}{extracurricular.tex}
-\import{\sectiondir}{honors.tex}
+	\bibliography{mybib} %name of your .bib file
 \import{\sectiondir}{presentation.tex}
-\import{\sectiondir}{writing.tex}
-\import{\sectiondir}{committees.tex}
 
 \end{document}
