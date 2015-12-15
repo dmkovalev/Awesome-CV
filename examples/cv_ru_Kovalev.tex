@@ -58,9 +58,6 @@
 \name{Дмитрий }{Ковалев}
 \address{119590, Мосфильмовская 70-3-552, Москва, Россия}
 \mobile{(+7) 916-153-0375} 
-\name{Claud D.}{Park}
-\address{246-1002, Gwangmyeongmayrouge Apt. 86, Cheongna lime-ro, Seo-gu, Incheon-si, 22738, Rep. of KOREA}
-\mobile{(+82) 10-9030-1843} 
 %%% Social
 \email{dm.kovalev@gmail.com}
 \homepage{synthesis.ipi.ac.ru/synthesis/staff/dmkovalev}
@@ -77,7 +74,7 @@
 %%% Make a footer for CV with three arguments(<left>, <center>, <right>)
 \makecvfooter
   {\today}
-  {ДК~~~·~~~Резюме}
+  {Дмитрий Ковалев~~~·~~~Резюме}
   {\thepage}
 
 \begin{document}
@@ -86,12 +83,11 @@
 
 %%% Import contents
 \import{\sectiondir}{education.tex}
-\import{\sectiondir}{skills.tex}
 \import{\sectiondir}{experience.tex}
-\import{\sectiondir}{extracurricular.tex}
-\import{\sectiondir}{honors.tex}
+\import{\sectiondir}{publications.tex}
+	\bibliography{mybib} %name of your .bib file
 \import{\sectiondir}{presentation.tex}
-\import{\sectiondir}{writing.tex}
-\import{\sectiondir}{committees.tex}
+\import{\sectiondir}{skills.tex}
+
 
 \end{document}
