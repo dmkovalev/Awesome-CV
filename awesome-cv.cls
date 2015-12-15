@@ -95,7 +95,7 @@
 }
 % Needed to deal with bibliography
 \RequirePackage{multibib}
-
+\RequirePackage[ddmmyyyy]{datetime}
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
 %-------------------------------------------------------------------------------
